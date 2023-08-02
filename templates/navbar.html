@@ -1,0 +1,16 @@
+{% load static %}
+
+<div style="display: flex; justify-content: center;">
+    <input type="text" name="input-name" placeholder="Search Video" id="name">
+    <select name="category" id="category" onchange="handleDropDown(value)">
+        <option value="">Choose Category</option>
+        <option value="Action">Action</option>
+        <option value="Comdey">Comedy</option>
+        <option value="Tutorial">Tutorial</option>
+        <option value="Educational">Educational</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Music">Music</option>
+    </select>
+</div>
+
+<script src="{% static 'js/navbar.js' %}"></script>
